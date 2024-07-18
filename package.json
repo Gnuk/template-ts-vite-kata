@@ -3,28 +3,30 @@
   "version": "1.0.0",
   "description": "TypeScript template to make kata with vitest",
   "main": "index.js",
+  "type": "commonjs",
   "scripts": {
     "test": "vitest",
     "ts:check": "tsc --noEmit",
     "test:ci": "vitest run --coverage",
     "test:coverage": "vitest --coverage",
-    "eslint:ci": "eslint './**/*.{ts,js}'",
-    "eslint": "eslint './**/*.{ts,js}' --fix"
+    "lint": "eslint \"./**/*.{ts,js}\"",
+    "lint:fix": "eslint \"./**/*.{ts,js}\" --fix",
+    "format": "prettier . --check",
+    "format:fix": "prettier . --write"
   },
   "author": "Anthony REY",
   "license": "MIT",
   "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "^6.6.0",
-    "@typescript-eslint/parser": "^6.6.0",
-    "@vitest/coverage-v8": "^1.0.4",
-    "eslint": "^8.19.0",
+    "@eslint/js": "^8.57.0",
+    "@types/eslint__js": "^8.42.3",
+    "@vitest/coverage-v8": "^2.0.3",
+    "eslint": "^8.57.0",
     "eslint-import-resolver-typescript": "^3.2.4",
     "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-prettier": "^5.0.0",
     "prettier": "^3.0.3",
-    "vitest": "^1.0.4"
-  },
-  "dependencies": {
-    "typescript": "^5.0.4"
+    "typescript": "^5.5.3",
+    "typescript-eslint": "^7.16.1",
+    "vitest": "^2.0.3"
   }
 }
