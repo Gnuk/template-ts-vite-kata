@@ -4,12 +4,11 @@ This is a basic template to make a kata using [TypeScript](https://www.typescrip
 
 ## Prerequisites
 
-* [Node](https://nodejs.org/) LTS
+- [Node](https://nodejs.org/) LTS
 
 ## Tests
 
 Create a test file in the `src` directory (example: `FizzBuzz.spec.ts`) add a test and run:
-
 
 To watch tests:
 
@@ -27,4 +26,32 @@ To run tests in continuous integration:
 
 ```shell
 npm run test:ci
+```
+
+## Format
+
+To check format:
+
+```shell
+npm run format
+```
+
+To fix format:
+
+```shell
+npm run format:fix
+```
+
+## Lint
+
+To check lint:
+
+```shell
+npm run lint
+```
+
+To fix lint:
+
+```shell
+npm run lint:fix
 ```
